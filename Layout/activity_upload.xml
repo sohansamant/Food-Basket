@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".UploadActivity">
+
+
+    <TextView
+        android:text="Item Price:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="Item Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+    <TextView
+        android:text="Item Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:id="@+id/etIngrediants"
+        android:hint="Ingrediants"
+        android:singleLine="false"
+        android:selectAllOnFocus="true"
+
+        android:inputType="textMultiLine"
+        android:lines="8"
+        android:minLines="1"
+        android:gravity="top|left"
+        android:maxLines="10"
+
+        android:scrollbars="vertical"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_toEndOf="@+id/buttonChoose" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etItemQuantity"
+        android:inputType="number"
+        android:hint="Quantity "
+        android:selectAllOnFocus="true"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/etIngrediants" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/etItemPrice"
+        android:inputType="number"
+        android:hint="Price"
+        android:selectAllOnFocus="true"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignStart="@+id/etItemQuantity" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+
+        android:id="@+id/etItemName"
+        android:hint="Name"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/etItemPrice" />
+
+    <TextView
+        android:text="Ingrediants"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/etItemQuantity"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/alert_light_frame"
+        android:id="@+id/imageView2"
+        android:layout_alignTop="@+id/buttonChoose" />
+
+    <Button
+        android:id="@+id/buttonUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload_image"
+        android:layout_marginBottom="38dp"
+        android:layout_marginStart="12dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+   <!-- <Button
+        android:text="Home Food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/Home_food" /> -->
+
+    <Button
+        android:id="@+id/buttonChoose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose File"
+        android:layout_above="@+id/buttonUpload"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="21dp" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/type_array"
+        android:prompt="@string/item_type"
+        android:id="@+id/spinner"
+        android:layout_alignTop="@+id/textView6"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:text="Menu Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/etIngrediants"
+        android:layout_alignEnd="@+id/textView" />
+<!--
+    <Button
+        android:id="@+id/Restaurant_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Food"
+        android:layout_marginEnd="15dp"
+        android:layout_alignBaseline="@+id/buttonUpload"
+        android:layout_alignBottom="@+id/buttonUpload"
+        android:layout_alignEnd="@+id/etIngrediants" /> -->
+
+
+</RelativeLayout>
+
+
