@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlist">
+
+<LinearLayout
+    android:id="@+id/activity_cart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs442.ssamant4.foodbasket.Cart"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Cart_Heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Basket"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Cart_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="20dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/Cart_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Confirm your order"/>
+
+
+</LinearLayout>
+</ScrollView>
