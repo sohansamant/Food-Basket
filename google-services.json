@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "930052439415",
+    "project_id": "firebase-foodbasket"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930052439415:android:56653a9034252af9",
+        "android_client_info": {
+          "package_name": "com.cs442.ssamant4.foodbasket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930052439415-d2vq8vrjusa2ifgrsjhf27onold1d5ls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cs442.ssamant4.foodbasket",
+            "certificate_hash": "FD550D1A728432B8D3A6CD5E31081734D8995518"
+          }
+        },
+        {
+          "client_id": "930052439415-vhn8sbrlq1t4j5pvcs8g5scb9lv99bqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9GK4q3cZpVomvFPk5ilucg7bVjlhjPv8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
